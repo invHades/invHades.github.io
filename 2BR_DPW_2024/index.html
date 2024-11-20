@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gorddazos Feede</title>
+  <link rel="stylesheet" href="CSS/estilos_inicio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="resources/logogorddazosfeede.png" type="image/x-icon">
+</head>
+<body>
+    <video autoplay muted loop class="videoFondo">
+        <source src="resources/fedecomiendo.mp4" type="video/mp4">
+        Tu navegador no soporta videos de fondo
+    </video>
+    <div class="overlay"></div>
+  <!-- nav con tres contenedores -->
+  <nav> <!-- nav principal -->
+    <div class="nav1">
+      <img src="resources/logo.png" alt="Logo de la Aplicacion" class="logo"> <!-- logo de la aplicacion -->
+    </div>
+
+    <div class="nav2">
+      <div class="icon" id="desktop-view">
+      <i class="fas fa-desktop"></i>
+    </div>
+
+    <div class="icon" id="tablet-view">
+      <i class="fas fa-tablet-alt"></i>
+    </div>
+
+    <div class="icon" id="mobile-view">
+      <i class="fas fa-mobile-alt"></i>
+      </div>
+    </div>
+
+    <div class="nav3">
+        
+      <ul> 
+        <li><a href="#seccion_inicio">Inicio</a></li>
+        <li><a href="#seccion_funciones">Funciones</a></li>
+        <li><a href="#seccion_descargas">Descargas</a></li>
+        <li><a href="#seccion_comentarios">Comentarios</a></li>
+        <li><a href="#seccion_premio">Premios</a></li>
+        <li><a href="#seccion_contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav> <!-- fin nav principal -->
+
+  <!-- Secciones principales -->
+  <section id="seccion_inicio" class="inicio"> <!-- Seccion inicio -->
+    
+      <div class="bienvenida">
+        <h1>Bienvenido a Gorddazos Feede</h1>
+        <p>La app ideal para disfrutar de las mejores hamburguesas estes donde estes!</p>
+      </div>
+
+      <div class="caracteristicas"> 
+        <div class="marco-dorado-inicio">
+        <div class="caracteristica"> 
+          <i class="fas fa-hamburger"></i>
+           <p>Pedidos rápidos y sencillos</p> 
+          </div>
+          </div> 
+
+          <div class="marco-dorado-inicio">
+          <div class="caracteristica">
+            <i class="fas fa-map-marker-alt"></i>
+             <p>Seguimiento en tiempo real</p> 
+            </div>
+            </div> 
+
+            <div class="marco-dorado-inicio">
+            <div class="caracteristica"> 
+              <i class="fas fa-headset"></i> 
+              <p>Atención las 24 horas</p> 
+            </div>
+            </div> 
+
+            <div class="marco-dorado-inicio">
+            <div class="caracteristica"> 
+              <i class="fas fa-star"></i> 
+              <p>Hamburguesas premiadas</p>
+            </div>
+             </div>
+    
+    </section> <!-- fin seccion inicio -->
+
+  <section id="seccion_funciones"> 
+         <div class="contenido">
+
+          <div class="barraBusqueda"> 
+            <input type="text" id="search-input" class="marco-dorado" placeholder="Buscar..." onkeyup="buscar()"> 
+            <button onclick="buscar()" class="marco-dorado"><i class="fas fa-search"></i></button> 
+          </div>
+          <div id="search-results" class="search-results marco-dorado" ></div>
+         </div>
+    </section> <!-- fin seccion funciones -->
+
+    <section id="seccion_descargas"><!-- inicio seccion descargas -->
+      <div class="contenido">
+        <div class="contenidoDescargas">
+        <img src="resources/logogorddazosfeede.png" width="400" height="400">
+        <p>Descarga nuestra App ahora! y pide hamburguesas desde donde sea!</p>
+        <button class="btn-descargar marco-dorado">
+          <img src="resources/playstore.svg" alt="Play Store" class="icono-playstore"> 
+          Descargar ahora!</button>
+        </div>
+      </div>
+    </section> <!-- Fin seccion descargas -->
+    
+
+    <section id="seccion_comentarios"> <!-- Seccion comentarios -->
+      <div class="contenido"> 
+
+          <div class="contenidoComentarios">
+              <img src="resources/gordazosfedejeje.png" alt="Cliente" class="imagenCliente">
+              <p>Este es uno de nuestros mejores clientes el cual como se puede apreciar en la imagen viene muy seguido y compra docenas de hamburguesas todos los dias. "Me encantan estas hamburguesas bien grasositas jeje"</p>
+            </div>
+
+          <div class="contenidoComentarios">
+              <img src="resources/clientito.png" alt="Cliente" class="imagenCliente">
+              <p>Este es otro cliente satisfecho con nuestro servicio el cual tambien viene todos los dias y esta fue su cara cuando probo por primera vez una de nuestras famosas hamburguesas. "Estas hamburguesas estan super hiper mega nashiii!!"</p>
+            </div>
+
+          <div class="contenidoComentarios">
+              <img src="resources/clientito2.png" alt="Cliente" class="imagenCliente">
+              <p>Cliente frecuente el cual es muy amable no solo el esta encantado con el servicio que le damos si no que nosotros con el por su amabilidad asi que le hicimos el asiento donde esta ahora. "Miau miau miau miau miau"</p>
+            </div>
+
+      </div>
+  </section> <!-- fin seccion comentarios -->
+    
+    
+    
+    
+
+  <section id="seccion_premio"> <!-- inicio seccion de premio -->
+    <div class="contenidoPremio">
+      <div class="imagenes">
+        <img src="resources/gordazosfedereal.png" alt="Ganador del mes" width="600" height="700" class="imagenFede marco-dorado">
+        <img src="resources/un trofeo de oro de hamburguesa.png" alt="Premio Hamburguesa dorada" width="600" height="700" class="imagenHamburguesa marco-dorado">
+      </div>
+      <p>
+        Este es Fede, el cliente que más hamburguesas compró en el mes ganando el trofeo de hamburguesa dorada.
+      </p>
+    </div>
+    
+    
+  </section> <!-- fin seccion premio -->
+  
+
+    <section id="seccion_contacto"> <!-- inicio seccion de contacto -->
+      <!-- Mapa de Google -->
+      <iframe class="mapaGoogle marco-dorado" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2314.8961713440663!2d-56.16738760342188!3d-34.862318600073934!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1731880345755!5m2!1sen!2sus" width="900" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+      <!-- Contenedor para la información de contacto y el formulario -->
+      <div class="contacto-contenedor">
+        <div class="columnaDatos">
+          <div class="datosContacto">
+            <ul class="listaContacto">
+              <li class="li_titulo">
+                <i class="fa-solid fa-location-dot"></i>&nbsp; &nbsp; Dirección
+              </li>
+              <li class="li_texto">Dr. Homero YT y Nedaneitor</li>
+              <li class="li_titulo">
+                <i class="fas fa-phone-alt"></i>&nbsp; &nbsp; Teléfono
+              </li>
+              <li class="li_texto">22006488</li>
+              <li class="li_titulo">
+                <i class="fas fa-envelope"></i>&nbsp; &nbsp; Correo electrónico
+              </li>
+              <li class="li_texto">gorddazosfeede@hamburguesas.com</li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="formulario">
+          <div class="formulario-contacto">
+            <form action="enviar_formulario.php" method="post">
+              <input type="text" name="nombre" placeholder="Nombre" required>
+              <input type="email" name="email" placeholder="Email" required>
+              <input type="text" name="asunto" placeholder="Asunto" required>
+              <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+              <button type="submit" class="marco-dorado">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section> <!-- fin seccion contacto -->
+  <script src="JavaScript/javascript.js"></script>
+</body>
+</html>
