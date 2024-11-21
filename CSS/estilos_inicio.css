@@ -1,0 +1,479 @@
+/* Reset de márgenes y fuente */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* nav estilo panel en la parte superior */
+nav {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(253,211,137,255);
+  color: rgb(255, 255, 255);
+  z-index: 10;
+  font-size: 30px;
+}
+
+.nav1, .nav2, .nav3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+}
+
+.nav1 {
+  width: 33vw;
+}
+
+.nav2 {
+  width: 34vw;
+  justify-content: space-around;
+}
+
+.nav3 {
+  width: 33vw;
+}
+
+/* Logo */
+.logo {
+  max-width: 200px;
+  max-height: 100%;
+}
+/* Imagenes de los clientes seccion comentarios */
+.imagenCliente{
+  width: 60%;
+  height: 100%;
+}
+
+
+.nav3 ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav3 ul li {
+  margin-left: 20px;
+}
+
+.nav3 ul li a {
+  font-size: 2vh;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+/* Estilos para las secciones */
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  margin-top: 15vh;
+}
+
+.videoFondo{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.contenido{
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenidoComentarios{
+  width: 50vh;
+  height: 30vh;
+  object-fit: cover;
+  align-items: center;
+  padding: 2rem;
+  
+}
+
+.marco-dorado { 
+border: 7px solid gold; 
+border-radius: 10px; /* Esquinas redondeadas */ 
+animation: brillo 2s infinite; 
+}
+@keyframes brillo { 0% { box-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px gold; 
+} 50% { box-shadow: 0 0 20px gold, 0 0 30px gold, 0 0 40px gold; 
+} 100% { box-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px gold; } 
+}
+
+.overlay {
+position: fixed; 
+top: 0; 
+left: 0; 
+width: 100%; 
+height: 100%; 
+background: rgba(0, 0, 0, 0.5); 
+z-index: 0; 
+}
+
+footer{
+  color:black;
+}
+
+#seccion_contacto{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.informacion-contacto {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.bienvenida{
+  margin-bottom: 20px;
+}
+
+.bienvenida h1{
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.bienvenida p {
+  font-size: 1.5rem;
+}
+
+.caracteristicas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10rem;
+}
+
+.caracteristica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caracteristica i {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.caracteristica p {
+  font-size: 1rem;
+  max-width: 100px;
+  text-align: center;
+}
+
+.inicio {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(253,211,137,255);
+  text-align: center;
+  position: relative;
+}
+
+.mapaGoogle{
+  width: 100%;
+  height: 300px;
+  margin-bottom: 1rem;
+}
+
+.datosContacto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formulario-contacto{
+  width: 30vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.columnaDatos .formulario{
+  width: 48%;
+}
+
+#seccion_premio{
+  height: 50vw;
+}
+
+.contacto-contenedor {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.listaContacto {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.listaContacto .li_titulo {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.listaContacto .li_texto {
+  margin-bottom: 10px;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulario-contacto button {
+  padding: 10px;
+  background-color:rgba(253,211,137,255);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+  background-color: #a80b0b;
+}
+
+.marco-dorado-inicio {
+  border: 5px solid gold; /* Cambia el grosor del borde aquí */
+  padding: 20px;          /* Ajusta el relleno para que el marco se vea más grande */
+  border-radius: 20px;    /* Opcional: ajusta el radio del borde si es necesario */
+  animation: brillo 2s infinite; 
+}
+
+#seccion_descargas {
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  height: 100vh; /* Asegura que el contenido se centra en la pantalla */
+}
+
+.btn-descargar {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px; /* Espacio entre el texto y el botón */
+  background-color:rgba(253,211,137,255); /* Color del botón */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.btn-descargar:hover {
+  background-color:#a80b0b; /* Cambio de color al pasar el ratón */
+}
+.contenidoDescargas{
+  flex-direction: column;
+}
+#seccion_premio {
+  font-size: 2rem;
+color:rgba(253,211,137,255);
+}
+.imagenFede, .imagenHamburguesa{
+  margin: 10rem;
+}
+.icono-playstore {
+  width: 20px; /* Ajusta el tamaño del icono */
+  height: 20px;
+  margin-right: 8px; /* Espacio entre el icono y el texto */
+  vertical-align: middle; /* Alinea el icono con el texto */
+}
+/* Estilos comunes */
+.icon {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px;
+}
+
+/* Estilos para el cambio de tamaño */
+#desktop-view.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#tablet-view.active {
+  background-color: #FFA500;
+  color: white;
+}
+
+#mobile-view.active {
+  background-color: #FF6347;
+  color: white;
+}
+
+/* Estilos de pantalla para diferentes vistas */
+body.desktop {
+  font-size: 1rem;
+  max-width: 100%; /* Pantalla de escritorio */
+}
+
+body.tablet {
+  font-size: 0.9rem;
+  max-width: 768px; /* Tamaño para tablets */
+  margin: 0 auto;
+}
+
+body.mobile {
+  font-size: 0.8rem;
+  max-width: 480px; /* Tamaño para móviles */
+  margin: 0 auto;
+}
+
+/* Vista para computadoras */
+@media (min-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Vista para tabletas */
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Vista para móviles */
+@media (max-width: 767px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+/* Estilos para la barra de búsqueda */
+.barraBusqueda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#search-input {
+  width: 400px; 
+  padding: 10px 20px; 
+  border: 1px solid #ddd;
+  border-radius: 50px 0 0 50px; 
+  outline: none;
+  font-size: 16px; 
+}
+
+.barraBusqueda button {
+  padding: 10px 20px; 
+  border: 1px solid #ddd;
+  border-left: none;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  border-radius: 0 50px 50px 0; 
+}
+
+.barraBusqueda button i {
+  font-size: 20px; 
+}
+
+.barraBusqueda button:hover {
+  background-color: #e8e8e8;
+}
+
+.barraBusqueda {
+  display: flex;
+}
+
+#search-input, .barraBusqueda button {
+  height: 50px; 
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#search-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px; /* Ancho igual al de la barra de búsqueda */
+  margin: 10px auto 0; /* Centrado y debajo de la barra de búsqueda */
+  padding: 10px;
+  background-color:rgba(253,211,137,255);
+  border: 1px solid #ddd;
+  border-radius: 0 0 50px 50px; /* Bordes ovalados en la parte inferior */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+.search-results div {
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: #a80b0b;
+}
+
+.search-results div:last-child {
+  border-bottom: none;
+}
+
+.search-results div:hover {
+  background-color: #f1f1f1;
+}
